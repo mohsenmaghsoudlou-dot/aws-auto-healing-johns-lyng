@@ -1,0 +1,28 @@
+# Downloaded Terraform providers and modules
+.terraform/
+
+# State can contain sensitive information
+*.tfstate
+*.tfstate.*
+
+# Local variable values
+*.tfvars
+*.tfvars.json
+
+# Saved plans
+*.tfplan
+tfplan
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Local Terraform overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Local CLI configuration
+.terraformrc
+terraform.rc
