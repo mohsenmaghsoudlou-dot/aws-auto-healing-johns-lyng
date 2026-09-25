@@ -19,3 +19,13 @@ module "network" {
     2
   )
 }
+
+module "load_balancer" {
+  source = "./modules/load-balancer"
+
+  name_prefix       = "${var.project_name}-${var.environment}"
+  vpc_id            = module.network.vpc_id
+  public_subnet_ids = module.network.public_subnet_ids
+
+  depends_on = [module.network]
+}
