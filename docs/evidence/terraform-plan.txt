@@ -1,0 +1,32 @@
+data.aws_availability_zones.available: Reading...
+module.network.aws_vpc.main: Refreshing state... [id=vpc-083ccc90593f9fd02]
+data.aws_availability_zones.available: Read complete after 0s [id=ap-southeast-2]
+module.network.aws_internet_gateway.main: Refreshing state... [id=igw-0f34c7e3fbb748f58]
+module.network.aws_route_table.private: Refreshing state... [id=rtb-059d8c28516faff84]
+module.network.aws_subnet.private[1]: Refreshing state... [id=subnet-057ed39b364293bea]
+module.network.aws_route_table.public: Refreshing state... [id=rtb-0be948e14a521bd97]
+module.network.aws_subnet.public[0]: Refreshing state... [id=subnet-0692981aee57ba88c]
+module.network.aws_subnet.public[1]: Refreshing state... [id=subnet-0f5dabe697eedca07]
+module.network.aws_subnet.private[0]: Refreshing state... [id=subnet-01b564416bde57cfc]
+module.network.aws_vpc_endpoint.s3: Refreshing state... [id=vpce-03a30280a4d2dbdd5]
+module.network.aws_route.public_internet: Refreshing state... [id=r-rtb-0be948e14a521bd971080289494]
+module.network.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-045e54903d8f54bce]
+module.network.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-0ca85c47408936843]
+module.network.aws_route_table_association.private[1]: Refreshing state... [id=rtbassoc-0d622f632b80e5a6d]
+module.network.aws_route_table_association.private[0]: Refreshing state... [id=rtbassoc-05db5e4ff9b0dafa4]
+module.load_balancer.aws_security_group.alb: Refreshing state... [id=sg-0773e50c23b22bb22]
+module.load_balancer.aws_lb_target_group.web: Refreshing state... [id=arn:aws:elasticloadbalancing:ap-southeast-2:<AWS_ACCOUNT_ID>:targetgroup/autoheal-dev-web/0f45e452527a3e34]
+module.load_balancer.aws_vpc_security_group_ingress_rule.http: Refreshing state... [id=sgr-000d277b75cb30504]
+module.load_balancer.aws_lb.main: Refreshing state... [id=arn:aws:elasticloadbalancing:ap-southeast-2:<AWS_ACCOUNT_ID>:loadbalancer/app/autoheal-dev-alb/4ce2ef3fe27d63dd]
+module.load_balancer.aws_lb_listener.http: Refreshing state... [id=arn:aws:elasticloadbalancing:ap-southeast-2:<AWS_ACCOUNT_ID>:listener/app/autoheal-dev-alb/4ce2ef3fe27d63dd/3760d14b357c27de]
+module.web_tier.aws_security_group.web: Refreshing state... [id=sg-03c6dee6dc0ccf2c0]
+module.web_tier.aws_vpc_security_group_egress_rule.https_to_s3: Refreshing state... [id=sgr-0cbfe7ea7578e5920]
+module.web_tier.aws_vpc_security_group_egress_rule.alb_to_web: Refreshing state... [id=sgr-00a64d8f4b00c9369]
+module.web_tier.aws_vpc_security_group_ingress_rule.http_from_alb: Refreshing state... [id=sgr-045d896dacbbe0b1c]
+module.web_tier.aws_launch_template.web: Refreshing state... [id=lt-0802465ac0d368b9c]
+module.web_tier.aws_autoscaling_group.web: Refreshing state... [id=autoheal-dev-web-asg]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.

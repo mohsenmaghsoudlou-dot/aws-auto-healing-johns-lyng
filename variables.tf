@@ -1,3 +1,13 @@
+variable "ami_id" {
+  description = "Amazon Linux 2023 ARM64 AMI ID in the selected AWS region."
+  type        = string
+
+  validation {
+    condition     = can(regex("^ami-[0-9a-f]{17}$", var.ami_id))
+    error_message = "Provide an AMI ID beginning with ami- followed by 17 hexadecimal characters."
+  }
+}
+
 variable "aws_region" {
   description = "AWS region in which to deploy the infrastructure."
   type        = string
